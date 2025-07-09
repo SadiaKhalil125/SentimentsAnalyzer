@@ -1,0 +1,45 @@
+# 🤖 BERT Sentiment Classifier – Fine-Tuned on Sentiment140
+
+This repository contains a complete pipeline for fine-tuning a BERT-based model for sentiment classification using the [Sentiment140 dataset](https://www.kaggle.com/datasets/kazanova/sentiment140). The model is built with 🤗 Hugging Face Transformers and trained in Google Colab.
+
+---
+
+## 📌 Project Overview
+
+We fine-tuned the pre-trained `bert-base-uncased` model on a cleaned version of the Sentiment140 dataset to classify tweets into:
+
+- **0 → Negative**
+- **1 → Neutral**
+- **2 → Positive**
+
+The project covers:
+
+- Data preprocessing & sampling (30,000 rows for fast experimentation)
+- Tokenization using `BertTokenizer`
+- Dataset conversion using Hugging Face `datasets`
+- Model fine-tuning with `Trainer` and `TrainingArguments`
+- Evaluation using accuracy, precision, recall, and F1-score
+- Saving and testing the fine-tuned model
+
+---
+
+## 🚀 Model Performance
+
+| Metric    | Value (example) |
+|-----------|-----------------|
+| Accuracy  | ~88%            |
+| F1-Score  | ~87%            |
+
+*Note: Performance may vary depending on training size and epochs.*
+
+---
+
+## 🧠 Technologies Used
+
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers)
+- [Datasets](https://huggingface.co/docs/datasets)
+- [PyTorch](https://pytorch.org/)
+- [Scikit-learn](https://scikit-learn.org/)
+- Google Colab (GPU-enabled)
+
+
